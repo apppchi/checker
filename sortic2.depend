@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1677574381 source:c:\users\sch1561-it-28\desktop\lesson 1\sortic2\sortic2.cpp
+	"sortic2.h"
+
+1677574292 c:\users\sch1561-it-28\desktop\lesson 1\sortic2\sortic2.h
+	<iostream>
+	<vector>
+	<string>
+
+1677574073 source:c:\users\sch1561-it-28\desktop\lesson 1\sortic2\4535345.cpp
+	"sortic2.h"
+
+1677575093 source:c:\users\sch1561-it-28\desktop\lesson 1\sortic2\main.cpp
+	"sortic2.h"
+
