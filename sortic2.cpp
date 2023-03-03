@@ -12,7 +12,7 @@ int str_to_int(string a){
 }
 
 void sa(vector <int> &a){
-    if (a.size() > 2){
+    if (a.size() >= 2){
         int i = a[0];
         a[0] = a[1];
         a[1] = i;
