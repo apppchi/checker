@@ -36,6 +36,7 @@ void pb(vector <int> &a, vector <int> &b){
         int c = a[0];
         ra(a);
         a.pop_back();
-        b[0] = c;
+        b.push_back(c);
+        rrb(b);
     }
 }

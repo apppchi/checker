@@ -12,15 +12,19 @@ int str_to_int(string a){
 }
 
 void sa(vector <int> &a){
-    int i = a[0];
-    a[0] = a[1];
-    a[1] = i;
+    if (a.size() > 2){
+        int i = a[0];
+        a[0] = a[1];
+        a[1] = i;
+    }
 }
 
 void sb(vector <int> &b){
-    int i = b[0];
-    b[0] = b[1];
-    b[1] = i;
+    if (b.size() > 2){
+        int i = b[0];
+        b[0] = b[1];
+        b[1] = i;
+    }
 }
 
 void rra(vector <int> &a){

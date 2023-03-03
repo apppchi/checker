@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    HANDLE console_color;
+    console_color = GetStdHandle(STD_OUTPUT_HANDLE);
     vector <string> c;
     vector <int> a;
     vector <int> b;
@@ -68,8 +70,13 @@ int main()
             }
         }
     }
-    if (a == d)
+    if (a == d){
+        SetConsoleTextAttribute(console_color, 10);
         cout << "OK";
-    else
+    }
+    else{
+        SetConsoleTextAttribute(console_color, 12);
         cout << "KO";
+    }
+    SetConsoleTextAttribute(console_color, 15);
 }
