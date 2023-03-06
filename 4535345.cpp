@@ -23,19 +23,27 @@ void rb(vector <int> &b){
 }
 
 void pa(vector <int> &a, vector <int> &b){
+    vector <int> d;
     if (b.size() > 0){
         int c = b[0];
         rb(b);
-        b.pop_back();
+        for (int i = 0; i < b.size() - 1; i++){
+            d.push_back(b[i]);
+        }
+        b = d;
         a[0] = c;
     }
 }
 
 void pb(vector <int> &a, vector <int> &b){
+    vector <int> d;
     if (a.size() > 0){
         int c = a[0];
         ra(a);
-        a.pop_back();
+        for (int i = 0; i < a.size() - 1; i++){
+            d.push_back(a[i]);
+        }
+        a = d;
         b.push_back(c);
         rrb(b);
     }
